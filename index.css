@@ -26,11 +26,14 @@ p{
 
 #correct {
     display:none;
+    color: #009933;
+    font-size: 3.2em;
 }
 
 #incorrect {
     display:none;
     color: red;
+    font-size: 3.2em;
 }
 
 #answer1 {

@@ -19,11 +19,13 @@ function submitComment() {
         styleQuestion.style.display="none";
         styleAnswer.style.display = "inline";
         correct.style.display = "inline";
+        incorrect.style.display = "none";
     } else {
         console.log(false)
         incorrect.style.display = "inline";
         styleQuestion.style.display="none";
         styleAnswer.style.display = "inline";
+        correct.style.display = "none";
     }       
     textArea.value = null
     
