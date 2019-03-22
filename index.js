@@ -1,11 +1,15 @@
 function submitComment() {
     // Gather data from the form
+    const styleAnswer = document.getElementById("answer1")
+    const styleQuestion = document.getElementById("question1")
     const textArea = document.getElementById('userAnswer')
     let userAnswer = textArea.value 
     const goodAnswer = document.getElementsByTagName('p')[0].innerHTML
     console.log(goodAnswer)
     if (userAnswer === goodAnswer) {
         console.log(true)
+        styleQuestion.style.display="none";
+        styleAnswer.style.display = "inline";
     } else {
         console.log(false)
 }

@@ -17,5 +17,10 @@ p{
 }
 
 #answer1 {
-    display:none
+    padding-top: 20%;
+    display:none;
+}
+#question1 {
+    padding-top: 20%;
+    display:inline;
 }
