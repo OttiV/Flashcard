@@ -3,16 +3,29 @@ function submitComment() {
     const styleAnswer = document.getElementById("answer1")
     const styleQuestion = document.getElementById("question1")
     const textArea = document.getElementById('userAnswer')
+    const correct = document.getElementById('correct')
+    const incorrect = document.getElementById('incorrect')
     let userAnswer = textArea.value 
-    const goodAnswer = document.getElementsByTagName('p')[0].innerHTML
+    let goodAnswer = document.getElementsByTagName('p')[2].innerHTML
     console.log(goodAnswer)
+
+    // Lowercase both answers
+    userAnswer = userAnswer.toLowerCase()
+    goodAnswer = goodAnswer.toLowerCase()
+
     if (userAnswer === goodAnswer) {
         console.log(true)
         styleQuestion.style.display="none";
         styleAnswer.style.display = "inline";
+        correct.style.display = "inline";
     } else {
         console.log(false)
-}
+        incorrect.style.display = "inline";
+        styleQuestion.style.display="none";
+        styleAnswer.style.display = "inline";
+    }       
+    textArea.value = null
+    
 }
 
 
@@ -20,10 +33,7 @@ function submitComment() {
 //     if (doesNotPassAllValidations(userAnswer)) {
 //         return null
 //     }
-//     // Uppercase first letter of userAnswer if it is not already
-//     if (userAnswer[0] === userAnswer[0].toLowerCase()) {
-//         userAnswer = userAnswer.charAt(0).toUpperCase() + userAnswer.slice(1)
-//     }
+   
 
 //     inputField.value = null
 //     textArea.value = null

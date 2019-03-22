@@ -8,19 +8,28 @@ body{
     height: 20em;
     display: inline-block;
     margin-top: 10%;
-    
+    padding-top: 5em;
+    background: linear-gradient(0deg, #ffcc00, #ff6600, #cc00ff, #6600cc);
 }
 p{
     text-align: center;
-    font-size: 6em;
+    font-size: 3em;
 
+}
+
+#correct {
+    display:none;
+}
+
+#incorrect {
+    display:none;
 }
 
 #answer1 {
-    padding-top: 20%;
+    
     display:none;
 }
 #question1 {
-    padding-top: 20%;
+    
     display:inline;
 }
