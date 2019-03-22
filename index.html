@@ -6,15 +6,25 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
-    
+    <script src="index.js"></script>
 </head>
 <body>
-    <h1></h1>
+    <main>
     <div id="flashcard1">
-        <p id="question1">
-            What is the DOM?
-        </p>
+        <p id='answer1'>Document Object Model</p>
+        <p id="question1">What is the DOM?</p>
     </div>
+    <form onsubmit="submitComment(); return false">
+         
+        <div class=“formSection”>         
+            <label for=“userAnswer”>Answer:</label>         
+            <input type="text" id="userAnswer"> 
+        </div>
+        <div class=“button”>
+            <button type=“default”>Submit</button>
+        </div>
+    </form>
+</main>
 </body> 
-<script src="index.js"></script>
+
 </html>
