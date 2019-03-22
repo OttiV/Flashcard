@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Flashcard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne|Questrial" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
     <script src="index.js"></script>
 </head>
@@ -16,14 +17,13 @@
         <p id='answer1'>Document Object Model</p>
         <p id="question1">What is the DOM?</p>
     </div>
-    <form onsubmit="submitComment(); return false">
-         
+    <form onsubmit="submitComment(); return false">  
         <div class=“formSection”>         
-            <label for=“userAnswer”>Answer:</label>         
-            <input type="text" id="userAnswer"> 
+            <label for=“userAnswer”></label>         
+            <input type="text" id="userAnswer" placeholder="Write your answer here"> 
         </div>
         <div class=“button”>
-            <button type=“default”>Submit</button>
+            <button type=“default” id="button">Submit</button>
         </div>
     </form>
 </main>

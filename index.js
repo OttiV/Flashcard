@@ -8,6 +8,7 @@ function submitComment() {
     let userAnswer = textArea.value 
     let goodAnswer = document.getElementsByTagName('p')[2].innerHTML
     console.log(goodAnswer)
+    const myButton = document.getElementById("button")
 
     // Lowercase both answers
     userAnswer = userAnswer.toLowerCase()
@@ -25,6 +26,7 @@ function submitComment() {
         styleAnswer.style.display = "inline";
     }       
     textArea.value = null
+    
     
 }
 
